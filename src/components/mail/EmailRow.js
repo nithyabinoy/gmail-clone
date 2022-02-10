@@ -3,9 +3,11 @@ import StarBorderIcon from "@mui/icons-material/StarBorder";
 import LabelImportantIcon from "@mui/icons-material/LabelImportant";
 import React from "react";
 import "./EmailRow.css";
+import { useNavigate } from "react-router-dom";
 function EmailRow({ id, title, subject, description, time }) {
+  const history = useNavigate();
   return (
-    <div className="emailRow">
+    <div className="emailRow" onClick={() => history("/mail")}>
       <div className="emailRow__options">
         <Checkbox />
         <IconButton>

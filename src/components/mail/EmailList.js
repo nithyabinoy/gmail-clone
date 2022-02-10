@@ -1,8 +1,7 @@
 import React from "react";
 import "./EmailList.css";
-import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { IconButton } from "@mui/material";
+import { Checkbox, IconButton } from "@mui/material";
 import RedoIcon from "@mui/icons-material/Redo";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
@@ -19,7 +18,7 @@ function EmailList() {
     <div className="emailList">
       <div className="emailList__settings">
         <div className="emailList__settingsLeft">
-          <CheckBoxOutlineBlankIcon />
+          <Checkbox />
           <IconButton>
             <ArrowDropDownIcon />
           </IconButton>
